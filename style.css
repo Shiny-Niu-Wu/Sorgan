@@ -3,6 +3,13 @@ body{
   color: white;
 }
 
+#page_title{
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+  font-weight: bold;
+}
+
 canvas {
   display: block;
 }

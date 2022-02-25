@@ -62,14 +62,18 @@ function modelReady() {
 
 function draw() {
 
+
   //mirror the webcam capture
   // translate(width,0);
   // scale(-1, 1);
   // image(video, 0, 0, windowWidth, windowHeight);
+  //deviceTurned();
 
   drawDigital();
 
   drawPhysical();
+
+
 
   frameRate(random(50)/100);
 

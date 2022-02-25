@@ -1,13 +1,47 @@
 body{
   background: black;
   color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+button{
+  font-family: inherit;
+}
+
+#scans{
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  font-size: 4vw;
 }
 
 #page_title{
   text-align: center;
-  font-size: 30px;
-  font-family: serif;
+  font-size: 4vw;
+}
+
+#logo{
+  position: fixed;
+  bottom: 3%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  left: 50%;
+  font-size: 6vw;
   font-weight: bold;
+}
+
+#level{
+  position: fixed;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  font-size: 4vw;
+}
+
+#level_text{
+  padding-right: 1vw;
 }
 
 canvas {

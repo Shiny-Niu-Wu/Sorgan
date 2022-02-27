@@ -37,11 +37,20 @@ function setup() {
   //drawPhysical();
 
   background(0);
+
+  // let level = 'social balance level: 0';
+  //
+  // textFont('PT Sans Narrow');
+  // textSize(windowWidth*0.05);
+  // fill(255);
+  // textAlign(CENTER);
+  // text(level, windowWidth/2, 50);
+
   imageMode(CENTER);
   image(head, windowWidth/2, windowHeight/2, 300, 500);
+
   //image(head, 250, 250, 300, 500);
 
-  //this needs to be randomized
   frameRate(0.25);
 }
 
@@ -73,6 +82,15 @@ function draw() {
 
   drawPhysical();
 
+
+  // var w = textWidth(level);
+  // fill(0);
+  // rectMode(CENTER);
+  // rect(windowWidth/2, 50, w, windowWidth*0.05);
+  // level = 'social balance level: 100';
+  // fill(255);
+  // textAlign(CENTER);
+  // text(level, windowWidth/2, 50);
 
 
   frameRate(random(50)/100);
@@ -147,6 +165,7 @@ function drawPhysical(){
   line(windowWidth/2, windowHeight/2, windowWidth/2 + dX, windowHeight/2 + dY);
   noStroke();
   ellipse(windowWidth/2 + dX, windowHeight/2 + dY, r);
+
 }
 
 function deviceTurned(){
@@ -159,5 +178,6 @@ function deviceTurned(){
   //to affect head tiltness and sorgan tiltness
   //make the line cursive
   //create a spearate randomized framecount for physical (make believe)
+
   //detect all face points to instantiate physical balls
   //detect phone rotation and remap balls

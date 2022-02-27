@@ -9,7 +9,7 @@
     <script src="js/p5.sound.min.js"></script>
     <script src="js/ml5.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
@@ -17,19 +17,32 @@
   </head>
   <body>
     <p id="page_title">Shiny's Sorgan</p>
-    <div id="level">
+    <!-- <div id="level">
       <p id="level_text">social balance level:</p>
       <p id="level_number">0</p>
-      <!-- make number change by frameRate -->
-    </div>
+
+    </div> -->
 
     <!-- watch video recaps of sorgan from other days -->
     <!-- swap out current videos for final ones -->
     <a href="https://drive.google.com/drive/folders/18Ek-39Ua2fRvisnckexiBlvUqjplHWjE?usp=sharing"><button type="button" name="button" id="scans">SCANS</button></a>
+    <button type="button" name="button" id="tip_button"  onclick="document.getElementById('id01').style.display='block'">tip</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <p>You are seeing circles of social weight accumulated by your interactions with people. The different colors represent different interaction type, and pulled in different directions based on other social parameters.</p>
+          <p>A healthy wellbeing should be displaying all types of cicles equally in all directions on sorgan.</p>
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
 
+    <p id="tel">need help? call: 080–999–0000</p>
     <p id="logo">SORGAN&#174;</p>
+
   </body>
 
 </html>

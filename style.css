@@ -2,6 +2,7 @@ body{
   background: black;
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
 }
 
 button{
@@ -9,11 +10,17 @@ button{
   border-radius: 10px;
 }
 
+.top_layer{
+  position: fixed;
+  z-index: 10;
+}
+
 #scans{
   position: fixed;
   top: 1vw;
   left: 1vw;
   font-size: 4vw;
+  margin: 10px;
 }
 
 #tip_button{
@@ -21,11 +28,13 @@ button{
   top: 8vw;
   left: 1vw;
   font-size: 4vw;
+  margin: 10px;
 }
 
 .w3-container{
   background-color: rgba(255, 255, 255, 0.2);
   width: 85%;
+  padding: 10px;
 }
 
 #id01{
